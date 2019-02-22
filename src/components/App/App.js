@@ -7,10 +7,10 @@ import Product from '../ProductView';
 class App extends Component {
   render() {
     return (
-        <div>
-            <Route path="/" component={ProductList} exact/>
-            <Route path="/:product" component={Product}/>
-        </div>
+      <div>
+        <Route path="/" component={ProductList} exact />
+        <Route path="/:product" component={Product} />
+      </div>
     );
   }
 }
