@@ -38,7 +38,7 @@ class ProductList extends Component {
         return (
             <div className='grid'>
                 <div className='grid-x'>
-                    <div className='cell'>
+                    <div className='cell cell-1'>
                         <SearchForm
                             searchQuery={searchQuery}
                             handleInput={this.changeSearchQuery}
@@ -46,7 +46,7 @@ class ProductList extends Component {
                             handleSelect={this.changeSortMethod}
                         />
                     </div>
-                    <div className='cell'>
+                    <div className='cell cell-2'>
                         {items.filter(item => item.name.toLowerCase().includes(searchQuery.toLowerCase()))
                             .sort(this.sortItems)
                             .map((item) => <ProductItem
